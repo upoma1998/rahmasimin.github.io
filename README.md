@@ -49,13 +49,15 @@ I have graduated from the
 
 ## Work Experience
 
-Cloudly Infotech Limited, Dhaka, Bangladesh <br>
-Software Engineer 
-March 2024 --- September 2025
+**Cloudly Infotech Limited, Dhaka, Bangladesh**  
+*Software Engineer*  
+March 2024 – September 2025
 
-CloudlyIO, Dhaka, Bangladesh
-Software Engineer 
-September 2023 --- February 2024
+**CloudlyIO, Dhaka, Bangladesh**  
+*Software Engineer*  
+September 2023 – February 2024
+
+---
 
 ## Research Experience
 
@@ -68,33 +70,27 @@ We have developed a real time dataset from field level by establishing an IoT so
 
 
 ## Education
-B.Sc. in Computer Science and Engineering
-Chittagong University of Engineering and Technology (CUET) 
-February 2018 - June 2023
-CGPA: 3.74 / 4.00 (Last 4 Semesters GPA: 3.85)
-Merit Position: 13th among 126
-Advisors: 
-Dr. Asaduzzaman
 
+**B.Sc. in Computer Science and Engineering**  
+Chittagong University of Engineering and Technology (CUET)  
+February 2018 – June 2023  
+
+- **CGPA:** 3.74 / 4.00 (Last 4 Semesters GPA: 3.85)  
+- **Merit Position:** 13th among 126  
+- **Advisors:** Dr. Asaduzzaman
+
+---
 
 ## Technical Skills
-Programming Languages
-Python, PHP, C++, Ruby, Golang
-BACK-END
-Django, FastAPI, Laravel, Rails, Docker
-Database:
-MySQL, PostgreSQL, SQLite
-Cloud:
-AWS DynamoDB, Lambda, EC2, CI/CD
-FRONT-END:
-ReactJS, JavaScript, JQuery, Bootstrap, Materialize CSS, HTML
-Version Control:
-Git, GitHub/GitLab
-Libraries:
-Tensorflow, Keras, PyTorch, OpenCV, CUDA 
-Article Writing:
-LaTeX
----
+
+**Programming Languages:** Python, PHP, C++, Ruby, Golang  
+**Back-End:** Django, FastAPI, Laravel, Rails, Docker  
+**Database:** MySQL, PostgreSQL, SQLite  
+**Cloud:** AWS DynamoDB, Lambda, EC2, CI/CD  
+**Front-End:** ReactJS, JavaScript, JQuery, Bootstrap, Materialize CSS, HTML  
+**Version Control:** Git, GitHub/GitLab  
+**Libraries:** TensorFlow, Keras, PyTorch, OpenCV, CUDA  
+**Article Writing:** LaTeX
 
 <!-- Projects Section -->
 <section id="projects">
