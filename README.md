@@ -42,14 +42,14 @@ section {
 My research interest lies in reimagining core system problems using Artificial Intelligence(AI), Natural Language Processing (NLP), Machine Learing, Deep Learning, Transformer, Large Language Model (LLM), Human Computer Interaction, Software Engineering, IoT, Smart Systems.
 
 I have graduated from the 
-[department of CSE, CUET](https://www.cuet.ac.bd/dept/cse)
+[Department of CSE, CUET](https://www.cuet.ac.bd/dept/cse)
 
 # <span id="resume">Resume</span>
 ## My Resume [📄](https://drive.google.com/file/d/1QplSZr3dh0Je12KgRyoOuSiPIRuNYEaf/view?usp=sharing)
 
 ## Work Experience
 
-Cloudly Infotech Limited, Dhaka, Bangladesh
+Cloudly Infotech Limited, Dhaka, Bangladesh <br>
 Software Engineer 
 March 2024 --- September 2025
 
@@ -80,88 +80,88 @@ Dr. Asaduzzaman
 ## Technical Skills
 Programming Languages
 Python, PHP, C++, Ruby, Golang
-
 BACK-END
 Django, FastAPI, Laravel, Rails, Docker
-
 Database:
 MySQL, PostgreSQL, SQLite
 Cloud:
 AWS DynamoDB, Lambda, EC2, CI/CD
-
 FRONT-END:
 ReactJS, JavaScript, JQuery, Bootstrap, Materialize CSS, HTML
-
 Version Control:
 Git, GitHub/GitLab
-
 Libraries:
 Tensorflow, Keras, PyTorch, OpenCV, CUDA 
-
 Article Writing:
 LaTeX
 ---
 
+<!-- Projects Section -->
 <section id="projects">
-## Projects
+  <h2>Projects</h2>
 
-### [Bdwork: Human Resource Management System](https://github.com/upoma1998/Human-Resource-Management-System-Django)
+  <h3><a href="https://github.com/upoma1998/Human-Resource-Management-System-Django">Bdwork: Human Resource Management System</a></h3>
+  <p>Software Engineering project built with HTML, CSS, ReactJS, Django, and MySQL.</p>
+  <p><strong>Project Description:</strong></p>
+  <ul>
+    <li>Helps HR track everyday activities, including employee personal details, attendance, leave, payroll, and recruitment.</li>
+    <li>Developed back-end logic for login, registration, handling employee details, recruitment, payroll, and basic CRUD operations.</li>
+    <li>Performed testing, debugging, and code integration through GitHub.</li>
+  </ul>
 
-Software Engineering project built with HTML, CSS, ReactJS, Django, and MySQL.
+  <h3><a href="https://github.com/upoma1998/Face-Recognition-Django">Face Recognition for Secure Identity Authentication</a></h3>
+  <p><strong>Technologies:</strong> HTML5, CSS, Django, MySQL</p>
+  <p><strong>Project Description:</strong></p>
+  <ul>
+    <li>Automated the attendance system of an organization using a face recognition system.</li>
+    <li>Designed a back-end authorization system that scans, matches, and verifies user identity.</li>
+    <li>Enabled applications such as automated attendance management and secure e-voting.</li>
+  </ul>
 
-**Project Description:**
-- Helps HR track everyday activities, including employee personal details, attendance, leave, payroll, and recruitment.
-- Developed back-end logic for login, registration, handling employee details, recruitment, payroll, and basic CRUD operations.
-- Performed testing, debugging, and code integration through GitHub.
+  <h3><a href="https://github.com/upoma1998/Wedding-Planning-Management-System-PHP">Wedding Planning Website</a></h3>
+  <p><strong>Technologies:</strong> HTML5, CSS, JavaScript, PHP, MySQL</p>
+  <p><strong>Project Description:</strong></p>
+  <ul>
+    <li>Developed the complete application for Admin, Client, and 5 categories of Vendor modules.</li>
+    <li>Implemented authentication, customer feedback via email, client payments through PayPal integration.</li>
+    <li>Monitored and managed data using XAMPP MySQL database.</li>
+  </ul>
 
-### [Face Recognition for Secure Identity Authentication](https://github.com/upoma1998/Face-Recognition-Django)
-
-**Technologies:** HTML5, CSS, Django, MySQL
-
-**Project Description:**
-- Automated the attendance system of an organization using a face recognition system.
-- Designed a back-end authorization system that scans, matches, and verifies user identity.
-- Enabled applications such as automated attendance management and secure e-voting.
-
----
-
-### [Wedding Planning Website](https://github.com/upoma1998/Wedding-Planning-Management-System-PHP)
-
-**Technologies:** HTML5, CSS, JavaScript, PHP, MySQL
-
-**Project Description:**
-- Developed the complete application for Admin, Client, and 5 categories of Vendor modules.
-- Implemented authentication, customer feedback via email, client payments through PayPal integration.
-- Monitored and managed data using XAMPP MySQL database.
-
----
-
-### ASD-CNN: Autism Spectrum Disorder Detection Using Machine Learning Techniques and CNN-Based Model
-
-**Technologies:** Python, Machine Learning, CNN
-
-**Project Description:**
-- Identified and classified patients with Autism Spectrum Disorder (ASD).
-- Performed data preprocessing, visualization, and analysis on Adult Dataset.
-- Trained and tested machine learning algorithms along with a CNN-based model.
+  <h3>ASD-CNN: Autism Spectrum Disorder Detection Using Machine Learning Techniques and CNN-Based Model</h3>
+  <p><strong>Technologies:</strong> Python, Machine Learning, CNN</p>
+  <p><strong>Project Description:</strong></p>
+  <ul>
+    <li>Identified and classified patients with Autism Spectrum Disorder (ASD).</li>
+    <li>Performed data preprocessing, visualization, and analysis on Adult Dataset.</li>
+    <li>Trained and tested machine learning algorithms along with a CNN-based model.</li>
+  </ul>
 </section>
 
+<!-- Achievements Section -->
 <section id="achievements">
-- Appreciation for outstanding contribution and valuable dedication in the 6-month success of Cloudly.
-- Attended the 3rd International Conference on Electrical, Computer and Communication Engineering (ECCE 2023) at Sheikh Kamal IT Business Incubator, CUET, Chittagong, Bangladesh.
-- Research Sub-Coordinator in CUET Computer Club.
-- Best Poster Presenter Award, CSE-252: Database Management System.
-- Participated in National Girls' Programming Contest.
-- Higher Secondary School Certificate (HSC) General Scholarship Award, Bangladesh Education Board.
-- Secondary School Certificate (SSC) General Scholarship Award, Bangladesh Education Board.
-- Junior School Certificate (JSC) Talent Pool Scholarship Award, Bangladesh Education Board.
+  <h2>Achievements</h2>
+  <ul>
+    <li>Appreciation for outstanding contribution and valuable dedication in the 6-month success of Cloudly.</li>
+    <li>Attended the 3rd International Conference on Electrical, Computer and Communication Engineering (ECCE 2023) at Sheikh Kamal IT Business Incubator, CUET, Chittagong, Bangladesh.</li>
+    <li>Research Sub-Coordinator in CUET Computer Club.</li>
+    <li>Best Poster Presenter Award, CSE-252: Database Management System.</li>
+    <li>Participated in National Girls' Programming Contest.</li>
+    <li>Higher Secondary School Certificate (HSC) General Scholarship Award, Bangladesh Education Board.</li>
+    <li>Secondary School Certificate (SSC) General Scholarship Award, Bangladesh Education Board.</li>
+    <li>Junior School Certificate (JSC) Talent Pool Scholarship Award, Bangladesh Education Board.</li>
+  </ul>
+</section>
 
+<!-- Leadership Section -->
 <section id="leadership">
-
-- Organized a coding competition with 200+ participants in CUET CSE FEST for CUET Computer Club, Chittagong, Bangladesh.
-- Conducted tutoring sessions in quantitative subjects (Math, Physics, Chemistry) for undergraduates, focusing on analytical reasoning and exam preparation.
-- Volunteered at workshop on ‘Software Engineering: Best Professional Practice’, Dhaka, Bangladesh.
-- Volunteered at workshop on ‘IoT-based Smart Campus’ at CUET, Chittagong, Bangladesh.
+  <h2>Leadership</h2>
+  <ul>
+    <li>Organized a coding competition with 200+ participants in CUET CSE FEST for CUET Computer Club, Chittagong, Bangladesh.</li>
+    <li>Conducted tutoring sessions in quantitative subjects (Math, Physics, Chemistry) for undergraduates, focusing on analytical reasoning and exam preparation.</li>
+    <li>Volunteered at workshop on ‘Software Engineering: Best Professional Practice’, Dhaka, Bangladesh.</li>
+    <li>Volunteered at workshop on ‘IoT-based Smart Campus’ at CUET, Chittagong, Bangladesh.</li>
+  </ul>
+</section>
 
 
 
