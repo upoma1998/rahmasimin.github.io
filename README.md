@@ -1,4 +1,4 @@
-About me
+## About me
  I'm Rahma Simin Ali (she/her), a Software Engineer with a 2 years of experience in software development in [CloudlyIO](https://cloudly.io/) and [Cloudly Infotech Limited](https://cloudly.com.bd/).
 
 My research interest lies in reimagining core system problems using Artificial Intelligence(AI), Natural Language Processing (NLP), Machine Learing, Deep Learning, Transformer, Large Language Model (LLM), Human Computer Interaction, Software Engineering, IoT, Smart Systems.
@@ -9,7 +9,7 @@ I have graduated from the
 
 ## My Resume [📄](https://drive.google.com/file/d/1QplSZr3dh0Je12KgRyoOuSiPIRuNYEaf/view?usp=sharing)
 
-Work Experience
+## Work Experience
 
 Cloudly Infotech Limited, Dhaka, Bangladesh
 Software Engineer 
@@ -19,7 +19,7 @@ CloudlyIO, Dhaka, Bangladesh
 Software Engineer 
 September 2023 --- February 2024
 
-Research Experience
+## Research Experience
 
 ReTSoSPA: IoT-based Real Time Soil Sensing for Precision Agriculture (2025)
 Rahma Simin Ali, Dr. Asaduzzaman
@@ -29,7 +29,7 @@ Published to 2024 27th International Conference on Computer and Information Tech
 We have developed a real time dataset from field level by establishing an IoT soil sensing hardware system with 5 sensors. The soil data collected from sensors are sent from a transmitter node to a receiver node and stored in the Cloud server through WiFi. We have trained several  Machine Learning algorithms for prediction of crops- potato, tomato, and three classes of rice that consist of the 61 types of rice produced in Bangladesh at different times of the year. Based on the predicted crop, the optimal amount of fertilizer like Urea, TSP and MoP is recommended. Finally, we have built a [Web Application](https://upoma1998-iotfin1-app-upoma1-umt8y3.streamlit.app/) to help farmers monitor soil conditions remotely for real time prediction.
 
 
-Education
+## Education
 B.Sc. in Computer Science and Engineering
 Chittagong University of Engineering and Technology (CUET) 
 February 2018 - June 2023
@@ -39,7 +39,7 @@ Advisors:
 Dr. Asaduzzaman
 
 
-Technical Skills
+## Technical Skills
 Programming Languages
 Python, PHP, C++, Ruby, Golang
 
