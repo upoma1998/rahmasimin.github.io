@@ -1,16 +1,44 @@
 ---
 layout: default
+title: "Rahma Simin Ali"
 ---
+
+<style>
+/* Simple nav bar styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0366d6;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Add some spacing so content isn't hidden under nav */
+section {
+  padding: 80px 20px 40px 20px;
+}
+</style>
 
 <nav>
-  <a href="#resume">Resume</a> |
-  <a href="#projects">Projects</a> |
-  <a href="#achievements">Achievements</a> |
-  <a href="#leadership">Leadership</a> |
+  <a href="#resume">Resume</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#leadership">Leadership</a>
   <a href="#contact">Contact</a>
 </nav>
-
----
 
 ## About me
  I'm Rahma Simin Ali (she/her), a Software Engineer with a 2 years of experience in software development in [CloudlyIO](https://cloudly.io/) and [Cloudly Infotech Limited](https://cloudly.com.bd/).
@@ -77,27 +105,37 @@ Tensorflow, Keras, PyTorch, OpenCV, CUDA
 Article Writing:
 LaTeX
 
-# <span id="projects">Projects</span>
-- Project 1: Some description
-- Project 2: Some description
+---
 
-  ---
-
-# <span id="achievements">Achievements</span>
-- Award 1
-- Award 2
+<section id="projects">
+# Projects
+- **Project 1** – Description here  
+- **Project 2** – Description here  
+</section>
 
 ---
 
-# <span id="leadership">Leadership</span>
-- Role 1
-- Role 2
+<section id="achievements">
+# Achievements
+- Award 1 – Description  
+- Award 2 – Description  
+</section>
 
 ---
 
-# <span id="contact">Contact</span>
+<section id="leadership">
+# Leadership
+- Leadership Role 1 – Description  
+- Leadership Role 2 – Description  
+</section>
+
+---
+
+<section id="contact">
+# Contact
 📧 Email: your@email.com  
 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
+</section>
 
 
 
