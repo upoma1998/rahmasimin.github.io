@@ -1,14 +1,4 @@
 title: Rahma Simin Ali
 logo: /assets/image.jpg
 theme: jekyll-theme-minimal
-
-# Include custom CSS
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-      css: "custom.css"
-
+show_footer: false
