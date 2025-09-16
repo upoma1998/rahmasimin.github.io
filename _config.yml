@@ -10,5 +10,5 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      css: "assets/css/custom.css"
+      css: "custom.css"
 
