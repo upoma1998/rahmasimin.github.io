@@ -103,7 +103,7 @@ LaTeX
 ---
 
 <section id="projects">
-# Projects
+## Projects
 [Bdwork : Human Resource Management System](https://github.com/upoma1998/Human-Resource-Management-System-Django)
 
 Software Engineering project built with HTML, CSS, ReactJS, Django and MySQL
@@ -127,25 +127,25 @@ Performed data preprocessing, visualization, and analysis on Adult Dataset along
 </section>
 
 <section id="achievements">
-# Achievements
-Appreciation for outstanding contribution and valuable dedication in the 6 month success of Cloudly
+## Achievements
+Appreciation for outstanding contribution and valuable dedication in the 6 month success of Cloudly <br>
 Attended the 3rd International Conference on Electrical, Computer and Communication Engineering (ECCE
-2023) in Sheikh Kamal IT Business Incubator, CUET, Chittagong, Bangladesh \hfill \textit{2023}
-Research Sub-Coordinator in CUET Computer Club \hfill \textit{2020}
-Best Poster Presenter Award, CSE-252: Database Management System\hfill \textit{2019}
-Participated in National Girls' Programming Contest \hfill \textit{2019}
-Higher Secondary School Certificate (HSC) General Scholarship Award, Bangladesh Education Board. \hfill \textit{2017}
-Secondary School Certificate (SSC) General Scholarship Award, Bangladesh Education Board. \hfill \textit{2015}
-Junior School Certificate (JSC) Talent Pool Scholarship Award, Bangladesh Education Board. \hfill \textit{2012}
+2023) in Sheikh Kamal IT Business Incubator, CUET, Chittagong, Bangladesh <br>
+Research Sub-Coordinator in CUET Computer Club <br>
+Best Poster Presenter Award, CSE-252: Database Management System <br>
+Participated in National Girls' Programming Contest <br>
+Higher Secondary School Certificate (HSC) General Scholarship Award, Bangladesh Education Board. <br>
+Secondary School Certificate (SSC) General Scholarship Award, Bangladesh Education Board. <br>
+Junior School Certificate (JSC) Talent Pool Scholarship Award, Bangladesh Education Board. <br>
 
 ---
 
 <section id="leadership">
-# Leadership
-Organized a coding competition with 200+ participants in CUET CSE FEST for CUET Computer Club, Chittagong, Bangladesh
-Conducted tutoring sessions in quantitative subjects (Math, Physics, Chemistry) for undergraduates, focusing on analytical reasoning and exam preparation.
-Volunteered at workshop on ‘Software Engineering: Best Professional Practice, Dhaka, Bangladesh. \hfill \textit{2023}
-Volunteered at workshop on ‘IoT-based Smart Campus’ at CUET, Chittagong, Bangladesh.   \hfill \textit{2021}
+## Leadership
+Organized a coding competition with 200+ participants in CUET CSE FEST for CUET Computer Club, Chittagong, Bangladesh <br>
+Conducted tutoring sessions in quantitative subjects (Math, Physics, Chemistry) for undergraduates, focusing on analytical reasoning and exam preparation. <br>
+Volunteered at workshop on ‘Software Engineering: Best Professional Practice, Dhaka, Bangladesh. <br>
+Volunteered at workshop on ‘IoT-based Smart Campus’ at CUET, Chittagong, Bangladesh. <br>
 ---
 
 
