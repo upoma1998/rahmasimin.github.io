@@ -1,11 +1,16 @@
-<p align="center">
-  <a href="#resume"> My Resume</a> • 
-  <a href="#projects">Projects</a> • 
-  <a href="#achievements">Achievements</a> • 
-  <a href="#leadership">Leadership</a> • 
-  <a href="#contact">Contact</a>
-</p>
+---
+layout: default
+---
 
+<nav>
+  <a href="#resume">Resume</a> |
+  <a href="#projects">Projects</a> |
+  <a href="#achievements">Achievements</a> |
+  <a href="#leadership">Leadership</a> |
+  <a href="#contact">Contact</a>
+</nav>
+
+---
 
 ## About me
  I'm Rahma Simin Ali (she/her), a Software Engineer with a 2 years of experience in software development in [CloudlyIO](https://cloudly.io/) and [Cloudly Infotech Limited](https://cloudly.com.bd/).
@@ -15,7 +20,7 @@ My research interest lies in reimagining core system problems using Artificial I
 I have graduated from the 
 [department of CSE, CUET](https://www.cuet.ac.bd/dept/cse)
 
-
+# <span id="resume">Resume</span>
 ## My Resume [📄](https://drive.google.com/file/d/1QplSZr3dh0Je12KgRyoOuSiPIRuNYEaf/view?usp=sharing)
 
 ## Work Experience
@@ -71,6 +76,28 @@ Tensorflow, Keras, PyTorch, OpenCV, CUDA
 
 Article Writing:
 LaTeX
+
+# <span id="projects">Projects</span>
+- Project 1: Some description
+- Project 2: Some description
+
+  ---
+
+# <span id="achievements">Achievements</span>
+- Award 1
+- Award 2
+
+---
+
+# <span id="leadership">Leadership</span>
+- Role 1
+- Role 2
+
+---
+
+# <span id="contact">Contact</span>
+📧 Email: your@email.com  
+🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
 
 
 
