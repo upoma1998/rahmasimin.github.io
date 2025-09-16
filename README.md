@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="#resume"> My Resume</a> • 
+  <a href="#projects">Projects</a> • 
+  <a href="#achievements">Achievements</a> • 
+  <a href="#leadership">Leadership</a> • 
+  <a href="#contact">Contact</a>
+</p>
+
+
 ## About me
  I'm Rahma Simin Ali (she/her), a Software Engineer with a 2 years of experience in software development in [CloudlyIO](https://cloudly.io/) and [Cloudly Infotech Limited](https://cloudly.com.bd/).
 
