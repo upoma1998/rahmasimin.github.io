@@ -1,8 +1,3 @@
----
-layout: default
-title: "Rahma Simin Ali"
----
-
 <style>
 /* Simple nav bar styling */
 nav {
