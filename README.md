@@ -95,7 +95,17 @@ February 2018 – June 2023
 <!-- Projects Section -->
 <section id="projects">
   <h2>Projects</h2>
-
+  
+  <h3><a href="https://github.com/upoma1998/Domain-Specialized-Fine-Tuning-of-LLMs-for-Mathematical-Knowledge-Acquisition">Domain-Specialized Fine-Tuning of     LLMs for Mathematical Knowledge Acquisition</a></h3>
+  <p>Research project focused on enhancing Large Language Models (LLMs) for mathematics question answering.</p>
+  <p><strong>Project Description:</strong></p>
+  <ul>
+    <li>Fine-tunes LLMs for mathematics QA to improve accuracy and reasoning consistency.</li>
+    <li>Constructs a dataset of diverse math problems with ground-truth solutions.</li>
+    <li>Adapts LLMs to handle both symbolic and numeric reasoning tasks effectively.</li>
+    <li>Initial findings show that domain adaptation enhances the models’ ability to interpret, solve, and explain mathematical problems.</li>
+  </ul>
+  
   <h3><a href="https://github.com/upoma1998/Human-Resource-Management-System-Django">Bdwork: Human Resource Management System</a></h3>
   <p>Software Engineering project built with HTML, CSS, ReactJS, Django, and MySQL.</p>
   <p><strong>Project Description:</strong></p>
