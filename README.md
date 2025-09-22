@@ -45,7 +45,7 @@ I have graduated from the
 [Department of CSE, CUET](https://cuet.ac.bd/)
 
 # <span id="resume">Resume</span>
-## My Resume [📄](https://drive.google.com/file/d/1Y2AnS8zXVJBtzRo8JdLRm2DFJ-A_HWnU/view?usp=sharing)
+## My Resume [📄](https://drive.google.com/file/d/1ESTqEvZx9bBULUBQOeCtbuVlQ-fN7IsY/view?usp=sharing)
 
 ## Work Experience
 
