@@ -42,10 +42,10 @@ section {
 My research interest lies in reimagining core system problems using Artificial Intelligence(AI), Natural Language Processing (NLP), Machine Learing, Deep Learning, Transformer, Large Language Model (LLM), Human Computer Interaction, Software Engineering, IoT, Smart Systems.
 
 I have graduated from the 
-[Department of CSE, CUET](https://www.cuet.ac.bd/dept/cse)
+[Department of CSE, CUET](https://cuet.ac.bd/)
 
 # <span id="resume">Resume</span>
-## My Resume [📄](https://drive.google.com/file/d/1QplSZr3dh0Je12KgRyoOuSiPIRuNYEaf/view?usp=sharing)
+## My Resume [📄](https://drive.google.com/file/d/1Y2AnS8zXVJBtzRo8JdLRm2DFJ-A_HWnU/view?usp=sharing)
 
 ## Work Experience
 
