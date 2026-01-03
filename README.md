@@ -179,14 +179,7 @@
       font-size:14px;
     }
   </style>
-  <style>
-    /* Hide GitHub Pages theme header */
-    .page-header,
-    header.page-header,
-    .site-header {
-      display: none !important;
-    }
-  </style>
+  
 </head>
 
 <body>
