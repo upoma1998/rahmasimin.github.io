@@ -203,8 +203,9 @@
     <section id="about">
       <div class="hero">
         <!-- Put your photo at /assets/profile.jpg (or change the path here) -->
-        <img class="avatar" src="assets/image.jpg" alt="Rahma Simin Ali" />
-
+        <!-- <img class="avatar" src="assets/image.jpg" alt="Rahma Simin Ali" /> -->
+         <img class="avatar" src="assets/NY.jpg" alt="Rahma Simin Ali" />
+         <!-- <img class="avatar" src="assets/image.jpg" alt="Rahma Simin Ali" /> -->
         <div>
           <h1>Rahma Simin Ali</h1>
           <p class="muted"><strong>Software Engineer</strong> &nbsp;|&nbsp; <strong>Machine Learning Researcher</strong></p>
