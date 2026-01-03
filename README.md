@@ -211,8 +211,8 @@
           <p class="muted"><strong>Software Engineer</strong> &nbsp;|&nbsp; <strong>Machine Learning Researcher</strong></p>
 
           <div class="social">
-            <a class="pill" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="https://github.com/upoma1998" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pill" href="https://www.linkedin.com/in/rahma-simin-226b211a4/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="pill" href="mailto:rahmasimin@gmail.com">Email</a>
             <a class="pill" href="https://scholar.google.com/citations?hl=en&user=ImxU8DIAAAAJ&view_op=list_works&gmla=AH8HC4xTYBp80ZfyN29QRG22c-0nV0l93Dp6bEVvQG1rcPDHGIj2HspUynis0qLdeHEVLN6Hx46Em5uB7c59RAqx" target="_blank" rel="noreferrer">Google Scholar</a>
           </div>
