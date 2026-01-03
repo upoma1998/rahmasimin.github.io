@@ -221,6 +221,7 @@
             <span class="chip">Trustworthy ML</span>
             <span class="chip">NLP / LLMs</span>
             <span class="chip">Low-Resource + Clinical NLP</span>
+            <span class="chip">Software Engineering</span>
             <span class="chip">IoT / Cyber-Physical</span>
             <span class="chip">Reliability-Critical Systems</span>
           </div>
@@ -394,7 +395,7 @@
       <p>If you are a faculty member or admissions committee member and would like to discuss my work, I’d be happy to connect.</p>
       <p>
         <strong>Email:</strong> <a href="mailto:rahmasimin@gmail.com">rahmasimin@gmail.com</a><br/>
-        <strong>Website:</strong> <a href="https://rahma-simin.github.io">rahma-simin.github.io</a>
+        <strong>Website:</strong> <a href="https://upoma1998.github.io/rahmasimin.github.io/">rahma-simin.github.io</a>
       </p>
     </section>
 
