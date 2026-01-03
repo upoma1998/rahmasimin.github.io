@@ -203,7 +203,7 @@
     <section id="about">
       <div class="hero">
         <!-- Put your photo at /assets/profile.jpg (or change the path here) -->
-        <img class="avatar" src="assets/profile.jpg" alt="Rahma Simin Ali" />
+        <img class="avatar" src="assets/image.jpg" alt="Rahma Simin Ali" />
 
         <div>
           <h1>Rahma Simin Ali</h1>
