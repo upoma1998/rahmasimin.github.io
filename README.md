@@ -21,13 +21,16 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Add some spacing so content isn't hidden under nav */
+/* Add spacing so content isn't hidden under nav */
 section {
   padding: 80px 20px 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 </style>
 
 <nav>
+  <a href="#about">About</a>
   <a href="#resume">Resume</a>
   <a href="#projects">Projects</a>
   <a href="#achievements">Achievements</a>
@@ -35,140 +38,147 @@ section {
   <a href="#contact">Contact</a>
 </nav>
 
----
-## About me
- I'm Rahma Simin Ali (she/her), a Software Engineer with a 2 years of experience in software development in [CloudlyIO](https://cloudly.io/) and [Cloudly Infotech Limited](https://cloudly.com.bd/).
 
-My research interest lies in reimagining core system problems using Artificial Intelligence(AI), Natural Language Processing (NLP), Machine Learing, Deep Learning, Transformer, Large Language Model (LLM), Human Computer Interaction, Software Engineering, IoT, Smart Systems.
+<section id="about">
+About Me
 
-I have graduated from the 
-[Department of CSE, CUET](https://cuet.ac.bd/)
+I’m Rahma Simin Ali (she/her), a Software Engineer and Machine Learning Researcher with over 2 years of industry experience at
+CloudlyIO
+ and Cloudly Infotech Limited
+.
 
-# <span id="resume">Resume</span>
-## My Resume [📄](https://drive.google.com/file/d/1DcYKcFLe97j9HqxaCAAwlQIOLsWE_ckv/view?usp=sharing)
+My work sits at the intersection of trustworthy machine learning, natural language processing, cyber-physical systems, and reliability-critical software engineering. Across research and industry, I focus on a single guiding question:
 
-## Work Experience
+How can we build intelligent systems whose behavior, reasoning, and failures remain reliable under real-world constraints?
 
-**Cloudly Infotech Limited, Dhaka, Bangladesh**  
-*Software Engineer*  
-March 2024 – September 2025
+I am currently applying to PhD programs in Computer Science (Fall 2026), with research interests centered on ML systems, LLM reasoning faithfulness, low-resource NLP, and dependable AI for safety-critical domains.
 
-**CloudlyIO, Dhaka, Bangladesh**  
-*Software Engineer*  
-September 2023 – February 2024
+</section>
+<section id="resume">
+Resume Snapshot
 
----
+B.Sc. in Computer Science & Engineering
+Chittagong University of Engineering & Technology (CUET)
+GPA: 3.74 / 4.00 (Last 4 semesters: 3.85)
+Merit Position: 13th out of 126
 
-## Research Experience
+Publications
 
-ReTSoSPA: IoT-based Real Time Soil Sensing for Precision Agriculture (2025)
-Rahma Simin Ali, Dr. Asaduzzaman
+ReTSoSPA: IoT-based Real-Time Soil Sensing for Precision Agriculture — IEEE ICCIT 2024
 
-Published to 2024 27th International Conference on Computer and Information Technology (ICCIT).
+Optimizing Complexity of Quick Sort — ICCSCS 2020 (Springer)
 
-We have developed a real time dataset from field level by establishing an IoT soil sensing hardware system with 5 sensors. The soil data collected from sensors are sent from a transmitter node to a receiver node and stored in the Cloud server through WiFi. We have trained several  Machine Learning algorithms for prediction of crops- potato, tomato, and three classes of rice that consist of the 61 types of rice produced in Bangladesh at different times of the year. Based on the predicted crop, the optimal amount of fertilizer like Urea, TSP and MoP is recommended. Finally, we have built a [Web Application](https://upoma1998-iotfin1-app-upoma1-umt8y3.streamlit.app/) to help farmers monitor soil conditions remotely for real time prediction.
+Research Interests
 
+Trustworthy & Robust Machine Learning
 
-## Education
+Large Language Models & Reasoning Faithfulness
 
-**B.Sc. in Computer Science and Engineering**  
-Chittagong University of Engineering and Technology (CUET)  
-February 2018 – June 2023  
+Low-Resource & Clinical NLP
 
-- **CGPA:** 3.74 / 4.00 (Last 4 Semesters GPA: 3.85)  
-- **Merit Position:** 13th among 126  
-- **Advisors:** Dr. Asaduzzaman
+ML Systems & Software Engineering
 
----
+Cyber-Physical & IoT-Enabled Intelligent Systems
 
-## Technical Skills
+📄 Full CV available upon request or via application materials.
 
-**Programming Languages:** Python, PHP, C++, Ruby, Golang  
-**Back-End:** Django, FastAPI, Laravel, Rails, Docker  
-**Database:** MySQL, PostgreSQL, SQLite  
-**Cloud:** AWS DynamoDB, Lambda, EC2, CI/CD  
-**Front-End:** ReactJS, JavaScript, JQuery, Bootstrap, Materialize CSS, HTML  
-**Version Control:** Git, GitHub/GitLab  
-**Libraries:** TensorFlow, Keras, PyTorch, OpenCV, CUDA  
-**Article Writing:** LaTeX
-
-<!-- Projects Section -->
+</section>
 <section id="projects">
-  <h2>Projects</h2>
-  
-  <h3><a href="https://github.com/upoma1998/Domain-Specialized-Fine-Tuning-of-LLMs-for-Mathematical-Knowledge-Acquisition">Domain-Specialized Fine-Tuning of     LLMs for Mathematical Knowledge Acquisition</a></h3>
-  <p>Research project focused on enhancing Large Language Models (LLMs) for mathematics question answering.</p>
-  <p><strong>Project Description:</strong></p>
-  <ul>
-    <li>Fine-tunes LLMs for mathematics QA to improve accuracy and reasoning consistency.</li>
-    <li>Constructs a dataset of diverse math problems with ground-truth solutions.</li>
-    <li>Adapts LLMs to handle both symbolic and numeric reasoning tasks effectively.</li>
-    <li>Initial findings show that domain adaptation enhances the models’ ability to interpret, solve, and explain mathematical problems.</li>
-  </ul>
-  
-  <h3><a href="https://github.com/upoma1998/Human-Resource-Management-System-Django">Bdwork: Human Resource Management System</a></h3>
-  <p>Software Engineering project built with HTML, CSS, ReactJS, Django, and MySQL.</p>
-  <p><strong>Project Description:</strong></p>
-  <ul>
-    <li>Helps HR track everyday activities, including employee personal details, attendance, leave, payroll, and recruitment.</li>
-    <li>Developed back-end logic for login, registration, handling employee details, recruitment, payroll, and basic CRUD operations.</li>
-    <li>Performed testing, debugging, and code integration through GitHub.</li>
-  </ul>
+Research & Technical Projects
+Domain-Specialized Fine-Tuning of LLMs for Mathematical Reasoning
 
-  <h3><a href="https://github.com/upoma1998/Face-Recognition-Django">Face Recognition for Secure Identity Authentication</a></h3>
-  <p><strong>Technologies:</strong> HTML5, CSS, Django, MySQL</p>
-  <p><strong>Project Description:</strong></p>
-  <ul>
-    <li>Automated the attendance system of an organization using a face recognition system.</li>
-    <li>Designed a back-end authorization system that scans, matches, and verifies user identity.</li>
-    <li>Enabled applications such as automated attendance management and secure e-voting.</li>
-  </ul>
+2025 – Present
 
-  <h3><a href="https://github.com/upoma1998/Wedding-Planning-Management-System-PHP">Wedding Planning Website</a></h3>
-  <p><strong>Technologies:</strong> HTML5, CSS, JavaScript, PHP, MySQL</p>
-  <p><strong>Project Description:</strong></p>
-  <ul>
-    <li>Developed the complete application for Admin, Client, and 5 categories of Vendor modules.</li>
-    <li>Implemented authentication, customer feedback via email, client payments through PayPal integration.</li>
-    <li>Monitored and managed data using XAMPP MySQL database.</li>
-  </ul>
+Curated a structured mathematical reasoning dataset with step-aligned hints
 
-  <h3>ASD-CNN: Autism Spectrum Disorder Detection Using Machine Learning Techniques and CNN-Based Model</h3>
-  <p><strong>Technologies:</strong> Python, Machine Learning, CNN</p>
-  <p><strong>Project Description:</strong></p>
-  <ul>
-    <li>Identified and classified patients with Autism Spectrum Disorder (ASD).</li>
-    <li>Performed data preprocessing, visualization, and analysis on Adult Dataset.</li>
-    <li>Trained and tested machine learning algorithms along with a CNN-based model.</li>
-  </ul>
+Fine-tuned large language models to reduce hallucinated or inconsistent intermediate steps
+
+Designed controlled evaluation protocols focusing on reasoning faithfulness rather than final accuracy
+
+Conducted experiments on non-English (Bangla) mathematical corpora
+
+📄 Manuscript in preparation (ACL-affiliated NLP workshop)
+
+ReTSoSPA: IoT-Based Real-Time Soil Sensing for Precision Agriculture
+
+Undergraduate Thesis | IEEE ICCIT 2024
+
+Designed an end-to-end cyber-physical pipeline: soil sensors → wireless nodes → ESP32 → cloud
+
+Collected 3,918 real-world sensor measurements across multiple agricultural sites
+
+Evaluated 7 ML models, achieving 99% accuracy using XGBoost
+
+Implemented real-time analytics, alerts, and fertilizer recommendations
+
+Demonstrated robustness under noisy sensing and resource constraints
+
+Clinical NLP in Low-Resource Settings (ASD & Alzheimer’s Detection)
+
+Developed CNN-based and classical ML models for Autism Spectrum Disorder detection
+
+Constructed a Bangla Alzheimer’s detection benchmark via controlled cross-lingual adaptation
+
+Preserved clinically meaningful linguistic biomarkers under ethical constraints
+
+Addressed challenges of data scarcity and evaluation reliability in clinical NLP
+
+Reliability-Critical Software Systems (Industry)
+
+JEXCA Alumni Platform (2,500+ users)
+
+Secure elections, atomic transactions, RBAC, payment integrations
+
+Diagnosed and mitigated production security incidents (AWS SES, IAM)
+
+Attendance Automation System
+
+Integrated biometric hardware with automated ETL pipelines
+
+Eliminated manual reconciliation; ensured tamper-resistant records
+
+CloudBox File Collaboration System
+
+Secure, role-based file storage using AWS S3
+
+Strong consistency and access-control guarantees
+
 </section>
-
-<!-- Achievements Section -->
 <section id="achievements">
-  <h2>Achievements</h2>
-  <ul>
-    <li>Appreciation for outstanding contribution and valuable dedication in the 6-month success of Cloudly.</li>
-    <li>Attended the 3rd International Conference on Electrical, Computer and Communication Engineering (ECCE 2023) at Sheikh Kamal IT Business Incubator, CUET, Chittagong, Bangladesh.</li>
-    <li>Research Sub-Coordinator in CUET Computer Club.</li>
-    <li>Best Poster Presenter Award, CSE-252: Database Management System.</li>
-    <li>Participated in National Girls' Programming Contest.</li>
-    <li>Higher Secondary School Certificate (HSC) General Scholarship Award, Bangladesh Education Board.</li>
-    <li>Secondary School Certificate (SSC) General Scholarship Award, Bangladesh Education Board.</li>
-    <li>Junior School Certificate (JSC) Talent Pool Scholarship Award, Bangladesh Education Board.</li>
-  </ul>
-</section>
+Honors & Achievements
 
-<!-- Leadership Section -->
+Ranked 13th / 126 in undergraduate program at CUET
+
+Full merit-based national scholarship (Bangladesh)
+
+Appreciation Award for Outstanding Contribution — Cloudly (2025)
+
+Research Sub-Coordinator, CUET Computer Club
+
+Participant, National Girls’ Programming Contest (2019)
+
+</section>
 <section id="leadership">
-  <h2>Leadership</h2>
-  <ul>
-    <li>Organized a coding competition with 200+ participants in CUET CSE FEST for CUET Computer Club, Chittagong, Bangladesh.</li>
-    <li>Conducted tutoring sessions in quantitative subjects (Math, Physics, Chemistry) for undergraduates, focusing on analytical reasoning and exam preparation.</li>
-    <li>Volunteered at workshop on ‘Software Engineering: Best Professional Practice’, Dhaka, Bangladesh.</li>
-    <li>Volunteered at workshop on ‘IoT-based Smart Campus’ at CUET, Chittagong, Bangladesh.</li>
-  </ul>
+Leadership & Service
+
+Organized coding competitions with 200+ participants at CUET CSE FEST
+
+Led research seminars and workshops as Research Sub-Coordinator
+
+Tutored students in mathematics and science across secondary and undergraduate levels
+
+Volunteered in workshops on Software Engineering Best Practices and IoT-based Smart Systems
+
 </section>
+<section id="contact">
+Contact
 
+If you are a faculty member, admissions committee member, or researcher interested in my work:
 
+📧 rahmasimin@gmail.com
 
+🌐 https://rahma-simin.github.io
 
+I welcome conversations about PhD research, ML systems, trustworthy AI, and interdisciplinary collaboration.
+
+</section>
