@@ -212,6 +212,6 @@ section {
 
   <p>
     📧 <strong>Email:</strong> rahmasimin@gmail.com<br>
-    🌐 <strong>Website:</strong> https://rahma-simin.github.io
+    🌐 <strong>Website:</strong> https://upoma1998.github.io/rahmasimin.github.io/
   </p>
 </section>
