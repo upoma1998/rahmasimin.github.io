@@ -1,217 +1,421 @@
-<style>
-/* Simple nav bar styling */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #f8f8f8;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
-}
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #0366d6;
-}
-nav a:hover {
-  text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rahma Simin Ali | Portfolio</title>
+  <meta name="description" content="Rahma Simin Ali — Software Engineer & ML Researcher. Trustworthy ML, NLP/LLMs, IoT/CP systems, reliability-critical software." />
 
-/* Add spacing so content isn't hidden under nav */
-section {
-  padding: 80px 20px 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-</style>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --link:#0366d6;
+      --border:#e5e7eb;
+      --chip:#f3f4f6;
+      --max: 980px;
+    }
+    html { scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#resume">Resume</a>
-  <a href="#projects">Projects</a>
-  <a href="#achievements">Achievements</a>
-  <a href="#leadership">Leadership</a>
-  <a href="#contact">Contact</a>
-</nav>
+    /* Fixed nav like reference */
+    nav{
+      position:fixed; top:0; left:0; width:100%;
+      background:#f8f8f8;
+      border-bottom:1px solid #ddd;
+      z-index:1000;
+    }
+    nav .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:10px 16px;
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    nav a{ font-weight:700; color:var(--link); }
 
+    /* Page layout */
+    main{ padding-top:74px; }
+    section{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:56px 16px;
+      border-bottom:1px solid var(--border);
+    }
+    h1{ font-size:40px; margin:0 0 6px 0; line-height:1.15; }
+    h2{ font-size:26px; margin:0 0 14px 0; }
+    h3{ font-size:18px; margin:18px 0 8px 0; }
+    p{ margin:0 0 12px 0; color:var(--text); }
+    .muted{ color:var(--muted); }
 
-<section id="about">
-  <h2>About Me</h2>
+    /* Hero */
+    .hero{
+      display:grid;
+      grid-template-columns: 140px 1fr;
+      gap:22px;
+      align-items:center;
+    }
+    .avatar{
+      width:140px; height:140px;
+      border-radius:14px;
+      object-fit:cover;
+      border:1px solid var(--border);
+      background:#fafafa;
+    }
+    .social{
+      display:flex; gap:12px; flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid var(--border);
+      background:#fff;
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      color:var(--text);
+    }
+    .pill:hover{ text-decoration:none; border-color:#cbd5e1; }
 
-  <p>
-    I’m <strong>Rahma Simin Ali</strong> (she/her), a <strong>Software Engineer and Machine Learning Researcher</strong>
-    with over <strong>2 years of industry experience</strong> at CloudlyIO and Cloudly Infotech Limited.
-  </p>
+    /* Chips */
+    .chips{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .chip{
+      background:var(--chip);
+      border:1px solid var(--border);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+      font-weight:600;
+    }
 
-  <p>
-    My work lies at the intersection of <strong>trustworthy machine learning</strong>,
-    <strong>natural language processing</strong>, <strong>cyber-physical systems</strong>,
-    and <strong>reliability-critical software engineering</strong>.
-    Across both research and industry, I focus on understanding not only how intelligent
-    systems succeed, but how and why they fail.
-  </p>
+    /* Resume blocks */
+    .card{
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:16px 16px;
+      background:#fff;
+      margin-top:12px;
+    }
+    ul{ margin:10px 0 0 18px; padding:0; }
+    li{ margin:6px 0; }
 
-  <p>
-    I am guided by a central research question:
-    <em>
-      How can we build intelligent systems whose behavior, reasoning, and failure modes
-      remain reliable under real-world constraints?
-    </em>
-  </p>
+    /* Projects filter like reference */
+    .filters{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:14px 0 18px 0;
+    }
+    .btn{
+      border:1px solid var(--border);
+      background:#fff;
+      padding:8px 12px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:700;
+      color:var(--text);
+    }
+    .btn.active{
+      border-color:#93c5fd;
+      background:#eff6ff;
+      color:#1d4ed8;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap:14px;
+    }
+    @media (max-width: 760px){
+      .hero{ grid-template-columns: 1fr; }
+      .avatar{ width:120px; height:120px; }
+      .grid{ grid-template-columns: 1fr; }
+      nav .wrap{ justify-content:center; }
+    }
+    .proj{
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:16px;
+      background:#fff;
+    }
+    .proj .meta{
+      margin-top:8px;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+    .tag{
+      font-size:12px;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:var(--muted);
+      background:#fafafa;
+      font-weight:700;
+    }
+    .proj h3{ margin:0 0 8px 0; }
+    .proj p{ margin:0; color:var(--muted); }
 
-  <p>
-    I am currently applying to <strong>PhD programs in Computer Science (Fall 2026)</strong>,
-    with research interests centered on <strong>machine learning systems</strong>,
-    <strong>LLM reasoning faithfulness</strong>, <strong>low-resource NLP</strong>,
-    and <strong>dependable AI for safety-critical domains</strong>.
-  </p>
-</section>
+    /* Footer spacing */
+    footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:34px 16px 60px 16px;
+      color:var(--muted);
+      font-size:14px;
+    }
+  </style>
+</head>
 
-<section id="resume">
-  <h2>Academic Background</h2>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <p>
-    <strong>B.Sc. in Computer Science and Engineering</strong><br>
-    Chittagong University of Engineering and Technology (CUET), Bangladesh
-  </p>
+  <main>
+    <!-- HERO / ABOUT -->
+    <section id="about">
+      <div class="hero">
+        <!-- Put your photo at /assets/profile.jpg (or change the path here) -->
+        <img class="avatar" src="assets/profile.jpg" alt="Rahma Simin Ali" />
 
-  <ul>
-    <li>GPA: <strong>3.74 / 4.00</strong> (Last 4 semesters: <strong>3.85</strong>)</li>
-    <li>Merit Position: <strong>13th out of 126</strong></li>
-    <li>Full merit-based undergraduate scholarship through national competition</li>
-  </ul>
+        <div>
+          <h1>Rahma Simin Ali</h1>
+          <p class="muted"><strong>Software Engineer</strong> &nbsp;|&nbsp; <strong>Machine Learning Researcher</strong></p>
 
-  <p>
-    My undergraduate training provided a strong foundation in algorithms, systems,
-    and empirical evaluation, which later shaped my research direction toward
-    dependable and real-world machine learning systems.
-  </p>
-</section>
+          <div class="social">
+            <a class="pill" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="mailto:rahmasimin@gmail.com">Email</a>
+            <a class="pill" href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
+          </div>
 
-<section id="projects">
-  <h2>Research & Technical Projects</h2>
+          <div class="chips">
+            <span class="chip">Trustworthy ML</span>
+            <span class="chip">NLP / LLMs</span>
+            <span class="chip">Low-Resource + Clinical NLP</span>
+            <span class="chip">IoT / Cyber-Physical</span>
+            <span class="chip">Reliability-Critical Systems</span>
+          </div>
+        </div>
+      </div>
 
-  <h3>Domain-Specialized Fine-Tuning of LLMs for Mathematical Reasoning</h3>
-  <p><em>2025 – Present</em></p>
+      <h2 style="margin-top:26px;">About me</h2>
+      <p>
+        I’m <strong>Rahma Simin Ali</strong> (she/her), a Software Engineer and Machine Learning Researcher with over
+        <strong>2 years of industry experience</strong> at CloudlyIO and Cloudly Infotech Limited.
+      </p>
+      <p>
+        My work sits at the intersection of trustworthy machine learning, natural language processing,
+        cyber-physical systems, and reliability-critical software engineering. Across research and industry,
+        I focus on a single guiding question:
+        <em>How can we build intelligent systems whose behavior, reasoning, and failures remain reliable under real-world constraints?</em>
+      </p>
+      <p>
+        I am currently applying to <strong>PhD programs in Computer Science (Fall 2026)</strong>, with research interests centered on
+        ML systems, LLM reasoning faithfulness, low-resource NLP, and dependable AI for safety-critical domains.
+      </p>
+    </section>
 
-  <ul>
-    <li>
-      Curated a structured dataset of mathematical problems with step-aligned solutions
-      and hints to evaluate <strong>reasoning faithfulness</strong>, not just final-answer accuracy.
-    </li>
-    <li>
-      Fine-tuned large language models to reduce hallucinated or inconsistent intermediate steps,
-      including experiments on <strong>non-English (Bangla) corpora</strong>.
-    </li>
-    <li>
-      Designed controlled evaluation protocols to analyze reasoning stability and failure modes
-      across unseen problems.
-    </li>
-    <li>
-      Manuscript in preparation for submission to an <strong>ACL-affiliated NLP workshop</strong>.
-    </li>
-  </ul>
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>My Resume</h2>
 
-  <h3>ReTSoSPA: IoT-Based Real-Time Soil Sensing for Precision Agriculture</h3>
-  <p><em>Undergraduate Thesis · IEEE ICCIT 2024</em></p>
+      <div class="card">
+        <h3>Education</h3>
+        <p><strong>B.Sc. in Computer Science and Engineering</strong> — Chittagong University of Engineering and Technology (CUET)</p>
+        <ul>
+          <li>GPA: <strong>3.74 / 4.00</strong> (Last 4 semesters: <strong>3.85</strong>)</li>
+          <li>Merit Position: <strong>13th out of 126</strong></li>
+          <li>Full merit-based undergraduate scholarship</li>
+        </ul>
+      </div>
 
-  <ul>
-    <li>
-      Designed and deployed an end-to-end cyber-physical pipeline integrating calibrated soil sensors,
-      NRF24L01 wireless nodes, an ESP32 gateway, and cloud synchronization.
-    </li>
-    <li>
-      Collected <strong>3,918 real-world sensor measurements</strong> across multiple agricultural sites.
-    </li>
-    <li>
-      Evaluated seven machine learning models and achieved <strong>99% accuracy</strong> using XGBoost.
-    </li>
-    <li>
-      Implemented real-time analytics, automated alerts, and fertilizer recommendation logic
-      robust to noisy field conditions.
-    </li>
-  </ul>
+      <div class="card">
+        <h3>Publications</h3>
+        <ul>
+          <li><strong>ReTSoSPA</strong> — IoT-based Real Time Soil Sensing for Precision Agriculture (IEEE ICCIT 2024)</li>
+          <li><strong>Optimizing Complexity of Quick Sort</strong> (ICCSCS 2020, Springer)</li>
+        </ul>
+      </div>
 
-  <h3>Clinical NLP in Low-Resource Settings (ASD & Alzheimer’s Detection)</h3>
+      <div class="card">
+        <h3>Industry Experience</h3>
+        <ul>
+          <li><strong>Software Engineer</strong>, Cloudly Infotech Limited (2024–2025): correctness-critical backend systems; security; reliability</li>
+          <li><strong>Software Engineer Intern</strong>, CloudlyIO (2023–2024): Rails, testing, background jobs, performance</li>
+        </ul>
+      </div>
+    </section>
 
-  <ul>
-    <li>
-      Developed CNN-based and classical ML models for early detection of
-      <strong>Autism Spectrum Disorder</strong> using structured behavioral features.
-    </li>
-    <li>
-      Constructed a Bangla Alzheimer’s detection benchmark by adapting the DementiaNet
-      English corpus under ethical constraints.
-    </li>
-    <li>
-      Preserved clinically salient linguistic biomarkers during cross-lingual transfer,
-      addressing challenges unique to low-resource clinical NLP.
-    </li>
-  </ul>
+    <!-- PROJECTS (with filter) -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="muted">Filter by category to quickly skim.</p>
 
-  <h3>Reliability-Critical Software Systems (Industry)</h3>
+      <div class="filters">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="ml">Machine Learning</button>
+        <button class="btn" data-filter="systems">Systems</button>
+        <button class="btn" data-filter="software">Software Development</button>
+      </div>
 
-  <ul>
-    <li>
-      Engineered correctness-critical backend systems for <strong>JEXCA</strong>, an alumni platform
-      serving over 2,500 users, including secure elections, RBAC, and payment workflows.
-    </li>
-    <li>
-      Diagnosed and mitigated production security incidents involving AWS SES and IAM,
-      migrating static credentials to secure secret management.
-    </li>
-    <li>
-      Designed automated attendance and file-collaboration systems emphasizing
-      fault tolerance, consistency, and access control.
-    </li>
-  </ul>
-</section>
+      <div class="grid" id="projectGrid">
+        <!-- ML -->
+        <div class="proj" data-cat="ml">
+          <h3>LLM Fine-Tuning for Mathematical Reasoning Faithfulness</h3>
+          <p>
+            Curated step-aligned hints + fine-tuned LLMs to reduce inconsistent intermediate steps; controlled evaluation beyond final answer accuracy.
+          </p>
+          <div class="meta">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">NLP / LLMs</span>
+            <span class="tag">Trustworthy AI</span>
+          </div>
+        </div>
 
-<section id="achievements">
-  <h2>Honors & Achievements</h2>
+        <div class="proj" data-cat="ml">
+          <h3>BanglaBERT for Alzheimer’s Detection</h3>
+          <p>
+            Built a low-resource clinical NLP benchmark by adapting DementiaNet with controlled translation and biomarker-preserving validation.
+          </p>
+          <div class="meta">
+            <span class="tag">Clinical NLP</span>
+            <span class="tag">Low-Resource</span>
+            <span class="tag">Evaluation</span>
+          </div>
+        </div>
 
-  <ul>
-    <li>Ranked <strong>13th out of 126</strong> in undergraduate cohort at CUET</li>
-    <li>Full merit-based national scholarship recipient</li>
-    <li>Appreciation Award for Outstanding Contribution, Cloudly (2025)</li>
-    <li>Research Sub-Coordinator, CUET Computer Club</li>
-    <li>Participant, National Girls’ Programming Contest (2019)</li>
-  </ul>
-</section>
+        <!-- Systems / IoT -->
+        <div class="proj" data-cat="systems">
+          <h3>ReTSoSPA / SoilSensingBD (IEEE ICCIT 2024)</h3>
+          <p>
+            End-to-end cyber-physical pipeline (sensors → wireless → ESP32 → cloud); 3,918 measurements; XGBoost 99% crop prediction accuracy.
+          </p>
+          <div class="meta">
+            <span class="tag">IoT</span>
+            <span class="tag">Cyber-Physical</span>
+            <span class="tag">ML Systems</span>
+          </div>
+        </div>
 
-<section id="leadership">
-  <h2>Leadership & Service</h2>
+        <!-- Software -->
+        <div class="proj" data-cat="software">
+          <h3>JEXCA Alumni Platform (2,500+ users)</h3>
+          <p>
+            Correctness-critical workflows (secure elections, payments, RBAC), fault tolerance, audit trails, and production incident response.
+          </p>
+          <div class="meta">
+            <span class="tag">Backend</span>
+            <span class="tag">Reliability</span>
+            <span class="tag">Security</span>
+          </div>
+        </div>
 
-  <ul>
-    <li>
-      Organized coding competitions with over 200 participants as part of CUET CSE FEST.
-    </li>
-    <li>
-      Led research seminars and workshops as Research Sub-Coordinator of the CUET Computer Club.
-    </li>
-    <li>
-      Conducted tutoring sessions in mathematics and science for secondary and undergraduate students.
-    </li>
-    <li>
-      Volunteered in workshops on software engineering best practices and IoT-based smart systems.
-    </li>
-  </ul>
-</section>
+        <div class="proj" data-cat="software">
+          <h3>Attendance Automation (Biometric → HRM)</h3>
+          <p>
+            Automated ETL pipeline integrating ZKTime fingerprint machine with Laravel HRM; reduced manual reconciliation; improved tamper resistance.
+          </p>
+          <div class="meta">
+            <span class="tag">Automation</span>
+            <span class="tag">ETL</span>
+            <span class="tag">Laravel</span>
+          </div>
+        </div>
 
-<section id="contact">
-  <h2>Contact</h2>
+        <div class="proj" data-cat="software">
+          <h3>CloudBox: Role-Driven File Collaboration (AWS S3)</h3>
+          <p>
+            Secure multi-organization storage pipeline with strict permission enforcement and reliable access control.
+          </p>
+          <div class="meta">
+            <span class="tag">AWS S3</span>
+            <span class="tag">Access Control</span>
+            <span class="tag">Scalability</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    If you are a faculty member, admissions committee member, or researcher interested in my work,
-    I would be happy to connect.
-  </p>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Merit Position: <strong>13th / 126</strong> (CUET)</li>
+        <li>Full merit-based national undergraduate scholarship</li>
+        <li>Appreciation Award for Outstanding Contribution — Cloudly (2025)</li>
+        <li>Research Sub-Coordinator — CUET Computer Club</li>
+        <li>National Girls’ Programming Contest participant (2019)</li>
+      </ul>
+    </section>
 
-  <p>
-    📧 <strong>Email:</strong> rahmasimin@gmail.com<br>
-    🌐 <strong>Website:</strong> https://upoma1998.github.io/rahmasimin.github.io/
-  </p>
-</section>
+    <!-- LEADERSHIP -->
+    <section id="leadership">
+      <h2>Leadership</h2>
+      <ul>
+        <li>Organized coding competition with <strong>200+ participants</strong> at CUET CSE FEST</li>
+        <li>Led seminars/workshops as Research Sub-Coordinator, CUET Computer Club</li>
+        <li>Tutored math/science for school + undergraduate students</li>
+        <li>Volunteer: Software Engineering best practices, IoT-based smart systems workshops</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you are a faculty member or admissions committee member and would like to discuss my work, I’d be happy to connect.</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:rahmasimin@gmail.com">rahmasimin@gmail.com</a><br/>
+        <strong>Website:</strong> <a href="https://rahma-simin.github.io">rahma-simin.github.io</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rahma Simin Ali · Built with GitHub Pages
+    </footer>
+  </main>
+
+  <script>
+    // footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // project filter behavior (similar to reference site's category filtering)
+    const buttons = document.querySelectorAll(".btn");
+    const projects = document.querySelectorAll(".proj");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const f = btn.dataset.filter;
+        projects.forEach(p => {
+          const cat = p.dataset.cat;
+          p.style.display = (f === "all" || f === cat) ? "block" : "none";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
