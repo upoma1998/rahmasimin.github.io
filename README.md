@@ -185,6 +185,11 @@
   <nav>
     <div class="wrap">
       <a href="#resume">Resume</a>
+      <a href="https://drive.google.com/drive/u/0/home"
+       target="_blank"
+       rel="noopener noreferrer">
+      Resume (PDF)
+    </a>
       <a href="#projects">Projects</a>
       <a href="#achievements">Achievements</a>
       <a href="#leadership">Leadership</a>
