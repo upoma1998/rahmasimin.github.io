@@ -1,564 +1,1483 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rahma Simin Ali | Portfolio</title>
-  <meta name="description" content="Rahma Simin Ali — Software Engineer & ML Researcher. Trustworthy ML, NLP/LLMs, IoT/CP systems, reliability-critical software." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Rahma Simin Ali | Machine Learning & LLM Researcher</title>
+
+  <meta
+    name="description"
+    content="Rahma Simin Ali — Machine Learning & LLM Researcher working on multilingual and low-resource NLP, language model reasoning and evaluation, and trustworthy and efficient LLMs."
+  />
 
   <style>
-    :root{
-      --bg:#ffffff;
-      --text:#111827;
-      --muted:#6b7280;
-      --link:#0366d6;
-      --border:#e5e7eb;
-      --chip:#f3f4f6;
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --link: #0366d6;
+      --border: #e5e7eb;
+      --chip: #f3f4f6;
+      --soft: #f8fafc;
       --max: 980px;
     }
-    html { scroll-behavior:smooth; }
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.6;
-    }
-    a{ color:var(--link); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
 
-    /* Fixed nav like reference */
-    nav{
-      position:fixed; top:0; left:0; width:100%;
-      background:#f8f8f8;
-      border-bottom:1px solid #ddd;
-      z-index:1000;
+    * {
+      box-sizing: border-box;
     }
-    nav .wrap{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:10px 16px;
-      display:flex;
-      gap:18px;
-      align-items:center;
-      justify-content:center;
-      flex-wrap:wrap;
+
+    html {
+      scroll-behavior: smooth;
     }
-    .links {
-      margin-top: 8px;
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
     }
-    
-    .links a {
-      margin-right: 12px;
-      font-size: 0.9rem;
-      color: #0366d6;
+
+    a {
+      color: var(--link);
       text-decoration: none;
     }
-    
-    .links a:hover {
+
+    a:hover {
       text-decoration: underline;
     }
-    nav a{ font-weight:700; color:var(--link); }
 
-    /* Page layout */
-    main{ padding-top:74px; }
-    section{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:56px 16px;
-      border-bottom:1px solid var(--border);
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(248, 248, 248, 0.96);
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
     }
-    h1{ font-size:40px; margin:0 0 6px 0; line-height:1.15; }
-    h2{ font-size:26px; margin:0 0 14px 0; }
-    h3{ font-size:18px; margin:18px 0 8px 0; }
-    p{ margin:0 0 12px 0; color:var(--text); }
-    .muted{ color:var(--muted); }
 
-    /* Hero */
-    .hero{
-      display:grid;
+    nav .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 10px 16px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-weight: 700;
+      color: var(--link);
+      font-size: 14px;
+    }
+
+    /* =========================
+       GENERAL PAGE
+    ========================== */
+
+    main {
+      padding-top: 74px;
+    }
+
+    section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 52px 16px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 70px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0 0 6px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin: 0 0 14px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 18px 0 8px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      display: grid;
       grid-template-columns: 140px 1fr;
-      gap:22px;
-      align-items:center;
-    }
-    .avatar{
-      width:140px; height:140px;
-      border-radius:14px;
-      object-fit:cover;
-      border:1px solid var(--border);
-      background:#fafafa;
-    }
-    .social{
-      display:flex; gap:12px; flex-wrap:wrap;
-      margin-top:10px;
-    }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      border:1px solid var(--border);
-      background:#fff;
-      padding:8px 12px;
-      border-radius:999px;
-      font-weight:600;
-      color:var(--text);
-    }
-    .pill:hover{ text-decoration:none; border-color:#cbd5e1; }
-
-    /* Chips */
-    .chips{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
-    .chip{
-      background:var(--chip);
-      border:1px solid var(--border);
-      padding:6px 10px;
-      border-radius:999px;
-      font-size:13px;
-      color:var(--muted);
-      font-weight:600;
+      gap: 22px;
+      align-items: center;
     }
 
-    /* Resume blocks */
-    .card{
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:16px 16px;
-      background:#fff;
-      margin-top:12px;
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      background: #fafafa;
     }
-    ul{ margin:10px 0 0 18px; padding:0; }
-    li{ margin:6px 0; }
 
-    /* Projects filter like reference */
-    .filters{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:14px 0 18px 0;
+    .social {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
     }
-    .btn{
-      border:1px solid var(--border);
-      background:#fff;
-      padding:8px 12px;
-      border-radius:10px;
-      cursor:pointer;
-      font-weight:700;
-      color:var(--text);
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--text);
     }
-    .btn.active{
-      border-color:#93c5fd;
-      background:#eff6ff;
-      color:#1d4ed8;
+
+    .pill:hover {
+      text-decoration: none;
+      border-color: #cbd5e1;
     }
-    .grid{
-      display:grid;
+
+    /* =========================
+       CHIPS
+    ========================== */
+
+    .chips {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* =========================
+       CARDS
+    ========================== */
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fff;
+      margin-top: 12px;
+    }
+
+    .card h3:first-child {
+      margin-top: 0;
+    }
+
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    /* =========================
+       PROJECT FILTER
+    ========================== */
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 14px 0 18px;
+    }
+
+    .btn {
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .btn:hover {
+      border-color: #93c5fd;
+    }
+
+    .btn.active {
+      border-color: #93c5fd;
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .grid {
+      display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap:14px;
+      gap: 14px;
     }
-    @media (max-width: 760px){
-      .hero{ grid-template-columns: 1fr; }
-      .avatar{ width:120px; height:120px; }
-      .grid{ grid-template-columns: 1fr; }
-      nav .wrap{ justify-content:center; }
-    }
-    .proj{
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:16px;
-      background:#fff;
-    }
-    .proj .meta{
-      margin-top:8px;
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-    .tag{
-      font-size:12px;
-      padding:4px 8px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      color:var(--muted);
-      background:#fafafa;
-      font-weight:700;
-    }
-    .proj h3{ margin:0 0 8px 0; }
-    .proj p{ margin:0; color:var(--muted); }
 
-    /* Footer spacing */
-    footer{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:34px 16px 60px 16px;
-      color:var(--muted);
-      font-size:14px;
+    .proj {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fff;
+    }
+
+    .proj h3 {
+      margin: 0 0 8px;
+    }
+
+    .proj p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .proj .meta {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: #fafafa;
+      font-weight: 700;
+    }
+
+    /* =========================
+       SKILLS
+    ========================== */
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .skill-box {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 15px;
+      background: var(--soft);
+    }
+
+    .skill-box h3 {
+      margin: 0 0 6px;
+    }
+
+    .skill-box p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 34px 16px 60px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 760px) {
+      main {
+        padding-top: 104px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+
+      .grid,
+      .skill-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav .wrap {
+        gap: 10px 14px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
     }
   </style>
-  
 </head>
 
 <body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
   <nav>
     <div class="wrap">
-     
-      <a href="https://drive.google.com/file/d/1DDR42HcLt6gnrNU_FSaO8mcq7T317ekH/view?usp=sharing"
-       target="_blank"
-       rel="noopener noreferrer">
-      Resume (PDF)
-    </a>
-      <a href="#projects">Projects</a>
+
+      <a
+        href="https://drive.google.com/file/d/1FY84e19Ph9k_bvGhIL6kUExuq7meAebz/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CV (PDF)
+      </a>
+
+      <a href="#publications">Publications</a>
+      <a href="#projects">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#achievements">Achievements</a>
       <a href="#leadership">Leadership</a>
       <a href="#contact">Contact</a>
+
     </div>
   </nav>
 
   <main>
-    <!-- HERO / ABOUT -->
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
     <section id="about">
+
       <div class="hero">
-        <!-- Put your photo at /assets/profile.jpg (or change the path here) -->
-        <!-- <img class="avatar" src="assets/image.jpg" alt="Rahma Simin Ali" /> -->
-         <img class="avatar" src="assets/NY.jpg" alt="Rahma Simin Ali" />
-         <!-- <img class="avatar" src="assets/image.jpg" alt="Rahma Simin Ali" /> -->
+
+        <img
+          class="avatar"
+          src="assets/NY.jpg"
+          alt="Rahma Simin Ali"
+        />
+
         <div>
+
           <h1>Rahma Simin Ali</h1>
-          <p class="muted"><strong>Software Engineer</strong> &nbsp;|&nbsp; <strong>Machine Learning Researcher</strong></p>
+
+          <p class="muted">
+            <strong>Machine Learning &amp; LLM Researcher</strong>
+          </p>
 
           <div class="social">
-            <a class="pill" href="https://github.com/upoma1998" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="pill" href="https://www.linkedin.com/in/rahma-simin-226b211a4/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="pill" href="mailto:rahmasimin@gmail.com">Email</a>
-            <a class="pill" href="https://scholar.google.com/citations?hl=en&user=ImxU8DIAAAAJ&view_op=list_works&gmla=AH8HC4xTYBp80ZfyN29QRG22c-0nV0l93Dp6bEVvQG1rcPDHGIj2HspUynis0qLdeHEVLN6Hx46Em5uB7c59RAqx" target="_blank" rel="noreferrer">Google Scholar</a>
+
+            <a
+              class="pill"
+              href="https://github.com/upoma1998"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              class="pill"
+              href="https://www.linkedin.com/in/rahma-simin-226b211a4/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="pill"
+              href="mailto:rahmasimin@gmail.com"
+            >
+              Email
+            </a>
+
+            <a
+              class="pill"
+              href="https://scholar.google.com/citations?hl=en&user=ImxU8DIAAAAJ&view_op=list_works"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar
+            </a>
+
           </div>
 
           <div class="chips">
-            <span class="chip">Trustworthy ML</span>
-            <span class="chip">NLP / LLMs</span>
-            <span class="chip">Low-Resource + Clinical NLP</span>
-            <span class="chip">Software Engineering</span>
-            <span class="chip">IoT / Cyber-Physical</span>
-            <span class="chip">Reliability-Critical Systems</span>
+            <span class="chip">Large Language Models</span>
+            <span class="chip">Multilingual &amp; Low-Resource NLP</span>
+            <span class="chip">LLM Reasoning &amp; Evaluation</span>
+            <span class="chip">Trustworthy LLMs</span>
+            <span class="chip">Efficient LLMs</span>
           </div>
+
         </div>
       </div>
 
-      <h2 style="margin-top:26px;">About me</h2>
+      <h2 style="margin-top:26px;">About Me</h2>
+
       <p>
-        I’m <strong>Rahma Simin Ali</strong> (she/her), a Software Engineer and Machine Learning Researcher with over
-        <strong>2 years of industry experience</strong> at CloudlyIO and Cloudly Infotech Limited.
+        I am a machine learning and language-model researcher working on
+        <strong>multilingual and low-resource NLP</strong>,
+        <strong>language-model reasoning and evaluation</strong>, and
+        <strong>trustworthy and efficient LLMs</strong>.
       </p>
+
       <p>
-        My work sits at the intersection of trustworthy machine learning, natural language processing,
-        cyber-physical systems, and reliability-critical software engineering. Across research and industry,
-        I focus on a single guiding question:
-        <em>How can we build intelligent systems whose behavior, reasoning, and failures remain reliable under real-world constraints?</em>
+        My current research investigates how reasoning supervision,
+        multilingual variation, code-mixing, cultural localization, and
+        input perturbations affect the reliability and robustness of language
+        models. I am especially interested in controlled evaluation methods
+        that go beyond final-answer accuracy.
       </p>
+
       <p>
-        I am currently applying to <strong>PhD programs in Computer Science (Fall 2026)</strong>, with research interests centered on
-        ML systems, LLM reasoning faithfulness, low-resource NLP, and dependable AI for safety-critical domains.
+        I also bring more than two years of software-engineering experience
+        across backend systems, data pipelines, cloud infrastructure,
+        automated testing, CI/CD, and production reliability.
       </p>
+
     </section>
 
-    <!-- RESUME -->
-    <section id="resume">
-      <h2>My Resume</h2>
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+
+    <section id="education">
+
+      <h2>Education</h2>
 
       <div class="card">
-        <h3>Education</h3>
-        <p><strong>B.Sc. in Computer Science and Engineering</strong> — Chittagong University of Engineering and Technology (CUET)</p>
-        <ul>
-          <li>GPA: <strong>3.74 / 4.00</strong> (Last 4 semesters: <strong>3.85</strong>)</li>
-          <li>Merit Position: <strong>13th out of 126</strong></li>
-          <li>Full merit-based undergraduate scholarship</li>
-        </ul>
-      </div>
 
-      <div class="card">
-        <h3>Publications</h3>
+        <div class="entry-head">
+
+          <div>
+            <strong>
+              B.Sc. in Computer Science and Engineering
+            </strong>
+            <br />
+
+            Chittagong University of Engineering and Technology (CUET),
+            Bangladesh
+          </div>
+
+          <span class="date">
+            Feb. 2018 – Jun. 2023
+          </span>
+
+        </div>
+
         <ul>
-          <!-- <li><strong>Lifeline: Traffic & Road Safety Assistant</strong> (ICECIT 2025)</li>
-          <li><strong>ReTSoSPA</strong> — IoT-based Real Time Soil Sensing for Precision Agriculture (IEEE ICCIT 2024)</li>
-          <li><strong>Optimizing Complexity of Quick Sort</strong> (ICCSCS 2020, Springer)</li> -->
+
           <li>
-  <strong>
-    <a href="https://ieeexplore.ieee.org/document/11451010" target="_blank">
-      Lifeline: Traffic & Road Safety Assistant
-    </a>
-  </strong> (ICECIT 2025)
-</li>
+            GPA:
+            <strong>3.74 / 4.00</strong>
+            (last four semesters:
+            <strong>3.85 / 4.00</strong>)
+          </li>
 
-<li>
-  <strong>
-    <a href="https://ieeexplore.ieee.org/abstract/document/11022480" target="_blank">
-      ReTSoSPA
-    </a>
-  </strong> (IEEE ICCIT 2024)
-</li>
+          <li>
+            Merit position:
+            <strong>13th out of 126</strong>
+          </li>
 
-<li>
-  <strong>
-    <a href="https://link.springer.com/chapter/10.1007/978-981-15-6648-6_26" target="_blank">
-      Optimizing Complexity of Quick Sort
-    </a>
-  </strong> (ICCSCS 2020, Springer)
-</li>
+          <li>
+            Advisor:
+            <strong>Dr. Asaduzzaman</strong>
+          </li>
+
+          <li>
+            Thesis:
+            <strong>
+              ReTSoSPA: IoT-based Real Time Soil Sensing for Precision Agriculture
+            </strong>
+          </li>
+
         </ul>
+
       </div>
 
-      <div class="card">
-  <h3>Industry Experience</h3>
-  <ul>
-    <li>
-      <strong>Software Engineer</strong>, 
-      <a href="https://cloudly.com.bd/" target="_blank" rel="noopener noreferrer">
-        Cloudly Infotech Limited
-      </a> (2024–2025): correctness-critical backend systems; security; reliability
-    </li>
-
-    <li>
-      <strong>Software Engineer Intern</strong>, 
-      <a href="https://ai.cloudly.io/" target="_blank" rel="noopener noreferrer">
-        CloudlyIO
-      </a> (2023–2024): Rails, testing, background jobs, performance
-    </li>
-
-    <li>
-      <strong>Academic Intern</strong>, 
-      <a href="https://www.bdren.net.bd/" target="_blank" rel="noopener noreferrer">
-        Bangladesh Research and Education Network (BdREN)
-      </a>: Cloud infrastructure, virtualization, and system deployment
-    </li>
-  </ul>
-</div>
     </section>
 
-    <!-- PROJECTS (with filter) -->
+    <!-- =========================
+         PUBLICATIONS
+    ========================== -->
+
+    <section id="publications">
+
+      <h2>Publications &amp; Preprints</h2>
+
+      <div class="card">
+
+        <h3>Preprint</h3>
+
+        <ul>
+
+          <li>
+
+            <strong>Ali, R.S.</strong> and Hossain, J. (2026).
+
+            <a
+              href="https://arxiv.org/abs/2608.08503"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>
+                MathShikkha: A Controlled Study of Answer-Only and
+                Chain-of-Thought Supervision for Bangla Mathematical
+                Reasoning in Small Language Models
+              </em>
+            </a>.
+
+            arXiv:2608.08503 [cs.AI].
+
+          </li>
+
+        </ul>
+
+        <h3>Peer-Reviewed Publications</h3>
+
+        <ul>
+
+          <li>
+
+            Chowdhury, M.,
+            <strong>Ali, R.S.</strong>,
+            Shah, M.A.B.,
+            Ilman, R.,
+            Uddin, M.K. and Sadika, A.H. (2025).
+
+            <a
+              href="https://ieeexplore.ieee.org/document/11451010"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>
+                Lifeline: A Traffic and Road Safety Assistant System
+              </em>
+            </a>.
+
+            ICECIT 2025, IEEE.
+
+          </li>
+
+          <li>
+
+            <strong>Ali, R.S.</strong>
+            and Asaduzzaman, A. (2024).
+
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/11022480"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>
+                ReTSoSPA: IoT-based Real Time Soil Sensing for Precision Agriculture
+              </em>
+            </a>.
+
+            27th ICCIT, pp. 1152–1157, IEEE.
+
+          </li>
+
+          <li>
+
+            Hossain, M.S.,
+            Mondal, S.,
+            <strong>Ali, R.S.</strong>
+            and Hasan, M. (2020).
+
+            <a
+              href="https://link.springer.com/chapter/10.1007/978-981-15-6648-6_26"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>
+                Optimizing Complexity of Quick Sort
+              </em>
+            </a>.
+
+            ICCSCS, pp. 329–339, Springer.
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         SELECTED RESEARCH
+    ========================== -->
+
     <section id="projects">
-      <h2>Projects</h2>
-      <p class="muted">Filter by category to quickly skim.</p>
+
+      <h2>Selected Research Projects</h2>
+
+      <p class="muted">
+        Filter by research area.
+      </p>
 
       <div class="filters">
-        <button class="btn active" data-filter="all">All</button>
-        <button class="btn" data-filter="ml">Machine Learning</button>
-        <button class="btn" data-filter="systems">Systems</button>
-        <button class="btn" data-filter="software">Software Development</button>
+
+        <button
+          class="btn active"
+          data-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="btn"
+          data-filter="llm"
+        >
+          LLM / NLP
+        </button>
+
+        <button
+          class="btn"
+          data-filter="systems"
+        >
+          IoT / Systems
+        </button>
+
       </div>
 
+      <div class="grid">
 
-        <!-- <div class="proj" data-cat="ml">
-          <h3>BanglaBERT for Alzheimer’s Detection</h3>
+        <!-- MathShikkha -->
+
+        <div
+          class="proj"
+          data-cat="llm"
+        >
+
+          <h3>
+
+            <a
+              href="https://arxiv.org/abs/2608.08503"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MathShikkha
+            </a>
+
+          </h3>
+
           <p>
-            Built a low-resource clinical NLP benchmark by adapting DementiaNet with controlled translation and biomarker-preserving validation.
+            Controlled study of answer-only versus teacher-generated Bangla
+            Chain-of-Thought supervision. Built a 1,436-example Bangla
+            mathematical-reasoning dataset and fine-tuned four 4B–7B models
+            with QLoRA and response-only loss masking.
           </p>
+
           <div class="meta">
-            <span class="tag">Clinical NLP</span>
-            <span class="tag">Low-Resource</span>
+            <span class="tag">Bangla NLP</span>
+            <span class="tag">Reasoning Supervision</span>
+            <span class="tag">QLoRA</span>
             <span class="tag">Evaluation</span>
           </div>
-        </div> -->
 
-        <!-- Systems / IoT -->
-        <div class="proj" data-cat="systems">
+        </div>
+
+        <!-- M2CL -->
+
+        <div
+          class="proj"
+          data-cat="llm"
+        >
+
           <h3>
-            <a href="https://ieeexplore.ieee.org/document/11022480" target="_blank" rel="noopener noreferrer">
-              ReTSoSPA / SoilSensingBD (IEEE ICCIT 2024)
-            </a>
+            M2CL-AgentBench
           </h3>
+
           <p>
-            End-to-end cyber-physical pipeline (sensors → wireless → ESP32 → cloud); 3,918 measurements; XGBoost 99% crop prediction accuracy.
+            Developing a multilingual, multi-domain, culturally localized,
+            and stress-tested benchmark for agentic reasoning across English,
+            Bangla, and English–Bangla code-mixed inputs.
           </p>
+
+          <div class="meta">
+            <span class="tag">Multilingual NLP</span>
+            <span class="tag">Agentic Reasoning</span>
+            <span class="tag">Code-Mixing</span>
+            <span class="tag">Robustness</span>
+          </div>
+
+        </div>
+
+        <!-- BanglaReason Stress -->
+
+        <div
+          class="proj"
+          data-cat="llm"
+        >
+
+          <h3>
+            BanglaReason-Stress &amp; MARS-C
+          </h3>
+
+          <p>
+            Developing diagnostic stress tests for distractors, perturbations,
+            code-mixing, and translation noise, together with an adaptive
+            reasoning strategy that conditions reasoning and tool use on
+            language, domain, culture, and task requirements.
+          </p>
+
+          <div class="meta">
+            <span class="tag">Stress Testing</span>
+            <span class="tag">Robustness</span>
+            <span class="tag">Adaptive Reasoning</span>
+          </div>
+
+        </div>
+
+        <!-- Lifeline -->
+
+        <div
+          class="proj"
+          data-cat="systems"
+        >
+
+          <h3>
+
+            <a
+              href="https://ieeexplore.ieee.org/document/11451010"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lifeline: Traffic &amp; Road Safety Assistant
+            </a>
+
+          </h3>
+
+          <p>
+            Smartphone-based traffic and road-safety assistance research
+            involving intelligent transportation, mobile sensing, and
+            cyber-physical decision support.
+          </p>
+
+          <div class="meta">
+            <span class="tag">Transportation</span>
+            <span class="tag">Mobile Sensing</span>
+            <span class="tag">Cyber-Physical Systems</span>
+          </div>
+
+        </div>
+
+        <!-- ReTSoSPA -->
+
+        <div
+          class="proj"
+          data-cat="systems"
+        >
+
+          <h3>
+
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/11022480"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ReTSoSPA
+            </a>
+
+          </h3>
+
+          <p>
+            Low-power wireless precision-agriculture system integrating
+            NRF24L01 communication, an ESP32 gateway, sensor calibration,
+            real-time monitoring, and ML-assisted decision support.
+          </p>
+
           <div class="meta">
             <span class="tag">IoT</span>
-            <span class="tag">Cyber-Physical</span>
-            <span class="tag">ML Systems</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Wireless Sensing</span>
+            <span class="tag">ML-Assisted Systems</span>
           </div>
+
         </div>
 
-      <div class="proj" data-cat="systems">
-        <h3>
-          <a href="https://ieeexplore.ieee.org/document/11451010" target="_blank" rel="noopener noreferrer">
-            Lifeline: Traffic & Road Safety Assistant
-          </a>
-        </h3>
-        <p>
-          Designed a cyber-physical system for traffic sensing, real-time prediction, and driver/vehicle state analysis under noisy, real-world conditions.
-        </p>
-      
-        
+        <!-- RAN -->
 
-      <div class="meta">
-        <span class="tag">Cyber-Physical</span>
-        <span class="tag">Road Safety</span>
-        <span class="tag">Real-Time Systems</span>
-      </div>
-      </div>
+        <div
+          class="proj"
+          data-cat="systems"
+        >
 
-      <div class="proj" data-cat="systems">
-        <h3>
-          
-            Telemetry-Driven RAN Optimization with a Digital Twin
-          
-        </h3>
-        <p>
-          Developed a RAN digital twin to study wireless network behavior under sparse, noisy telemetry and measurement uncertainty for data-driven optimization.
-        </p>
-      
-        
-      
-        <div class="meta">
-          <span class="tag">Wireless Systems</span>
-          <span class="tag">Digital Twin</span>
-          <span class="tag">Telemetry</span>
-        </div>
-      </div>
-      <div class="proj" data-cat="ml">
           <h3>
-            <a href="https://github.com/upoma1998/Domain-Specialized-Fine-Tuning-of-LLMs-for-Mathematical-Knowledge-Acquisition" target="_blank" rel="noopener noreferrer">
-              LLM Fine-Tuning for Mathematical Reasoning Faithfulness
-            </a>
+            Telemetry-Driven RAN Digital Twins
           </h3>
+
           <p>
-            Curated step-aligned hints + fine-tuned LLMs to reduce inconsistent intermediate steps; controlled evaluation beyond final answer accuracy.
+            Investigated next-generation network optimization with digital
+            twins, focusing on how noisy and incomplete telemetry affects
+            network-state estimation and control decisions.
           </p>
-        
-          
-        
+
           <div class="meta">
-            <span class="tag">Machine Learning</span>
-            <span class="tag">NLP / LLMs</span>
-            <span class="tag">Trustworthy AI</span>
+            <span class="tag">RAN</span>
+            <span class="tag">Digital Twins</span>
+            <span class="tag">Telemetry</span>
           </div>
+
         </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         RESEARCH EXPERIENCE
+    ========================== -->
+
+    <section id="experience">
+
+      <h2>
+        Research &amp; Teaching Experience
+      </h2>
+
+      <!-- Mahfuzulhoq -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <strong>
+            Research Assistant, Dr. Mahfuzulhoq Chowdhury — CUET
+          </strong>
+
+          <span class="date">
+            2025 – Present
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Conduct research on intelligent transportation,
+            road-safety systems, mobile sensing, and
+            cyber-physical decision support.
+          </li>
+
+          <li>
+            Co-authored
+            <a
+              href="https://ieeexplore.ieee.org/document/11451010"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>
+                Lifeline: A Traffic and Road Safety Assistant System
+              </em>
+            </a>
+            (ICECIT 2025), developing a smartphone-based traffic
+            and road-safety assistance system.
+          </li>
+
+          <li>
+            Currently extending
+            <a
+              href="https://arxiv.org/abs/2608.08503"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>MathShikkha</em>
+            </a>
+            under Dr. Chowdhury’s guidance, exploring the cybersecurity
+            domain, vision-language models (VLMs), and explainable reasoning.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Asaduzzaman -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <strong>
+            Research Assistant, Dr. Asaduzzaman — CUET
+          </strong>
+
+          <span class="date">
+            2023 – 2024
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Developed
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/11022480"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>
+                ReTSoSPA: IoT-based Real Time Soil Sensing for Precision Agriculture
+              </em>
+            </a>,
+            a low-power wireless precision-agriculture system published at
+            ICCIT 2024.
+          </li>
+
+          <li>
+            Investigated telemetry-driven RAN digital twins for
+            next-generation network optimization, studying the effects of
+            noisy and incomplete telemetry on network-state estimation and
+            control decisions.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- NLP Lab -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <strong>
+            Undergraduate Researcher, CUET NLP Lab — CUET
+          </strong>
+
+          <span class="date">
+            2020 – 2023
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Conducted collaborative NLP and applied machine-learning research
+            involving dataset preparation, model evaluation, statistical
+            analysis, and research writing.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Teaching -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <strong>
+            Teaching Assistant, Data Communication and Computer Networks — CUET
+          </strong>
+
+          <span class="date">
+            2019, 2020
+          </span>
+
+        </div>
+
        
 
-        <!-- Software -->
-        <div class="proj" data-cat="software">
-          <h3>
-            <a href="https://apps.apple.com/us/app/jexca/id1485198161" target="_blank" rel="noopener noreferrer">
-              JEXCA Alumni Platform (2,500+ users)
-            </a>
-          </h3>
-          <p>
-            Correctness-critical workflows (secure elections, payments, RBAC), fault tolerance, audit trails, and production incident response.
-          </p>
-        
-          
-        
-          <div class="meta">
-            <span class="tag">Backend</span>
-            <span class="tag">Reliability</span>
-            <span class="tag">Security</span>
-          </div>
-        </div>
-
-        <div class="proj" data-cat="software">
-          <h3>Attendance Automation (Biometric → HRM)</h3>
-          <p>
-            Automated ETL pipeline integrating ZKTime fingerprint machine with Laravel HRM; reduced manual reconciliation; improved tamper resistance.
-          </p>
-          <div class="meta">
-            <span class="tag">Automation</span>
-            <span class="tag">ETL</span>
-            <span class="tag">Laravel</span>
-          </div>
-        </div>
-
-        <div class="proj" data-cat="software">
-          <h3>CloudBox: Role-Driven File Collaboration (AWS S3)</h3>
-          <p>
-            Secure multi-organization storage pipeline with strict permission enforcement and reliable access control.
-          </p>
-          <div class="meta">
-            <span class="tag">AWS S3</span>
-            <span class="tag">Access Control</span>
-            <span class="tag">Scalability</span>
-          </div>
-        </div>
-
-         <div class="proj" data-cat="software">
-            <h3>SurveyGate: Incentivized Survey Delivery Platform</h3>
-            <p>
-              Improved backend reliability and responsiveness by optimizing queries, diagnosing latency-related issues, and strengthening test and CI/CD workflows.
-            </p>
-            <div class="meta">
-              <span class="tag">Ruby on Rails</span>
-              <span class="tag">Reliability</span>
-              <span class="tag">CI/CD</span>
-            </div>
-          </div>
-        <div class="proj" data-cat="software">
-          <h3></h3>
-          <p>
-            
-          </p>
-          <div class="meta">
-            <span class="tag"></span>
-            <span class="tag"></span>
-            <span class="tag"></span>
-          </div>
-        </div>
       </div>
+
+      <!-- =========================
+           PROFESSIONAL EXPERIENCE
+      ========================== -->
+
+      <h2 style="margin-top:34px;">
+        Professional Experience
+      </h2>
+
+      <!-- Cloudly -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <div>
+
+            <strong>
+              Software Engineer
+            </strong>
+
+            —
+
+            <a
+              href="https://cloudly.com.bd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cloudly Infotech Limited
+            </a>,
+
+            Dhaka, Bangladesh
+
+          </div>
+
+          <span class="date">
+            Mar. 2024 – Sep. 2025
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Designed production backend services and data pipelines with
+            role-based access control, multi-tenant permissions,
+            reliability-focused data access, and fault-tolerant processing.
+          </li>
+
+          <li>
+            Built and maintained production data pipelines with emphasis on
+            consistency, recoverability, scalability, and fault tolerance
+            under real workloads.
+          </li>
+
+          <li>
+            Improved system performance and deployment reliability through
+            database optimization, automated testing, CI/CD, and AWS
+            infrastructure.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- CloudlyIO -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <div>
+
+            <strong>
+              Software Engineer Intern
+            </strong>
+
+            —
+
+            <a
+              href="https://ai.cloudly.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CloudlyIO
+            </a>,
+
+            Dhaka, Bangladesh
+
+          </div>
+
+          <span class="date">
+            Sep. 2023 – Feb. 2024
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Diagnosed database-query and latency bottlenecks and strengthened
+            software robustness through automated testing, CI/CD, and
+            regression-risk analysis.
+          </li>
+
+          <li>
+            Worked with Ruby on Rails, Sidekiq, Redis, PostgreSQL,
+            AWS EC2/Lambda, Git, and production deployment pipelines.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- BdREN -->
+
+      <div class="card">
+
+        <div class="entry-head">
+
+          <div>
+
+            <strong>
+              Academic Intern
+            </strong>
+
+            —
+
+            <a
+              href="https://www.bdren.net.bd/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bangladesh Research and Education Network (BdREN)
+            </a>,
+
+            Dhaka, Bangladesh
+
+          </div>
+
+          <span class="date">
+            Oct. 2022 – Nov. 2022
+          </span>
+
+        </div>
+
+        <ul>
+
+          <li>
+            Built backend web components using Django and PostgreSQL and
+            gained exposure to cloud infrastructure, virtualization, and
+            large-scale deployment environments.
+          </li>
+
+        </ul>
+
+      </div>
+
     </section>
 
-    <!-- ACHIEVEMENTS -->
+    <!-- =========================
+         TECHNICAL SKILLS
+    ========================== -->
+
+    <section id="skills">
+
+      <h2>Technical Skills</h2>
+
+      <div class="skill-grid">
+
+        <div class="skill-box">
+
+          <h3>
+            Machine Learning &amp; LLMs
+          </h3>
+
+          <p>
+            PyTorch, Hugging Face Transformers, QLoRA/LoRA,
+            supervised fine-tuning, reasoning distillation,
+            small language models
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <h3>
+            NLP &amp; Evaluation
+          </h3>
+
+          <p>
+            Bangla NLP, multilingual and low-resource NLP,
+            teacher–student learning, reasoning evaluation,
+            human evaluation, contamination auditing
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <h3>
+            Research &amp; Statistical Methods
+          </h3>
+
+          <p>
+            Experimental design, paired bootstrap confidence intervals,
+            McNemar tests, robustness analysis
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <h3>
+            Programming &amp; Backend
+          </h3>
+
+          <p>
+            Python, Ruby on Rails, Laravel, Django,
+            PostgreSQL, MySQL, Redis
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <h3>
+            Cloud &amp; Systems
+          </h3>
+
+          <p>
+            AWS EC2/S3/Lambda, Docker, Git, CI/CD,
+            production reliability
+          </p>
+
+        </div>
+
+        <div class="skill-box">
+
+          <h3>
+            IoT &amp; Cyber-Physical Systems
+          </h3>
+
+          <p>
+            ESP32, NRF24L01, wireless sensing,
+            telemetry-driven systems, real-time monitoring
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         ACHIEVEMENTS
+    ========================== -->
+
     <section id="achievements">
-      <h2>Achievements</h2>
+
+      <h2>
+        Honors &amp; Achievements
+      </h2>
+
       <ul>
-        <li>Merit Position: <strong>13th / 126</strong> (CUET)</li>
-        <li>Full merit-based national undergraduate scholarship</li>
-        <li>Appreciation Award for Outstanding Contribution — Cloudly (2025)</li>
-        <li>Research Sub-Coordinator — CUET Computer Club</li>
-        <li>National Girls’ Programming Contest participant (2019)</li>
+
+        <li>
+          Ranked
+          <strong>13th out of 126</strong>
+          students in the Department of Computer Science and Engineering,
+          CUET.
+        </li>
+
+        <li>
+          Awarded a
+          <strong>full merit-based undergraduate scholarship</strong>
+          through competitive national engineering entrance examinations
+          in Bangladesh.
+        </li>
+
+        <li>
+          Appointed
+          <strong>Research Sub-Coordinator, CUET Computer Club</strong>,
+          in recognition of research leadership and academic contributions.
+        </li>
+
+        <li>
+          Selected to participate in the
+          <strong>National Girls’ Programming Contest</strong>.
+        </li>
+
       </ul>
+
     </section>
 
-    <!-- LEADERSHIP -->
+    <!-- =========================
+         LEADERSHIP
+    ========================== -->
+
     <section id="leadership">
-      <h2>Leadership</h2>
+
+      <h2>
+        Leadership &amp; Service
+      </h2>
+
       <ul>
-        <li>Organized coding competition with <strong>200+ participants</strong> at CUET CSE FEST</li>
-        <li>Led seminars/workshops as Research Sub-Coordinator, CUET Computer Club</li>
-        <li>Tutored math/science for school + undergraduate students</li>
-        <li>Volunteer: Software Engineering best practices, IoT-based smart systems workshops</li>
+
+        <li>
+          Research Sub-Coordinator, CUET Computer Club — organized
+          research seminars, workshops, coding competitions, and supported
+          undergraduate research engagement.
+        </li>
+
+        <li>
+          Organized a coding competition with
+          <strong>200+ participants</strong>
+          during CUET CSE FEST, coordinating problem design,
+          evaluation, and event logistics.
+        </li>
+
+        <li>
+          Conducted tutoring sessions in mathematics, physics,
+          and chemistry for undergraduate students.
+        </li>
+
       </ul>
+
     </section>
 
-    <!-- CONTACT -->
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
     <section id="contact">
+
       <h2>Contact</h2>
-      <p>If you are a faculty member or admissions committee member and would like to discuss my work, I’d be happy to connect.</p>
+
       <p>
-        <strong>Email:</strong> <a href="mailto:rahmasimin@gmail.com">rahmasimin@gmail.com</a><br/>
-        <strong>Website:</strong> <a href="https://upoma1998.github.io/rahmasimin.github.io/">rahma-simin.github.io</a>
+        I am happy to connect about research collaborations,
+        graduate research opportunities, and work related to
+        multilingual NLP, LLM reasoning, and trustworthy AI.
       </p>
+
+      <p>
+
+        <strong>Email:</strong>
+
+        <a href="mailto:rahmasimin@gmail.com">
+          rahmasimin@gmail.com
+        </a>
+
+        <br />
+
+        <strong>Website:</strong>
+
+        <a
+          href="https://upoma1998.github.io/rahmasimin.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          upoma1998.github.io/rahmasimin.github.io/
+        </a>
+
+      </p>
+
     </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
-      © <span id="year"></span> Rahma Simin Ali · Built with GitHub Pages
+
+      © <span id="year"></span>
+      Rahma Simin Ali · Built with GitHub Pages
+
     </footer>
+
   </main>
 
-  <script>
-    // footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
-    // project filter behavior (similar to reference site's category filtering)
-    const buttons = document.querySelectorAll(".btn");
-    const projects = document.querySelectorAll(".proj");
+  <script>
+
+    // Automatically update footer year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    // Project filtering
+    const buttons =
+      document.querySelectorAll(".btn");
+
+    const projects =
+      document.querySelectorAll(".proj");
+
 
     buttons.forEach(btn => {
+
       btn.addEventListener("click", () => {
-        buttons.forEach(b => b.classList.remove("active"));
+
+        buttons.forEach(b =>
+          b.classList.remove("active")
+        );
+
         btn.classList.add("active");
 
-        const f = btn.dataset.filter;
-        projects.forEach(p => {
-          const cat = p.dataset.cat;
-          p.style.display = (f === "all" || f === cat) ? "block" : "none";
+
+        const filter =
+          btn.dataset.filter;
+
+
+        projects.forEach(project => {
+
+          const category =
+            project.dataset.cat;
+
+          project.style.display =
+            (filter === "all" ||
+             filter === category)
+              ? "block"
+              : "none";
+
         });
+
       });
+
     });
+
   </script>
+
 </body>
 </html>
-
